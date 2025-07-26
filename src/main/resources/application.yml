@@ -1,0 +1,20 @@
+spring:
+    webflux:
+        base-path: /flights-finder/api
+    cache:
+        type: caffeine
+        caffeine:
+            spec: maximumSize=100000
+app:
+    config:
+        web-clients-config:
+            routes-api:
+                base-url: https://services-api.ryanair.com/views/locate/3/routes
+            schedules-api:
+                base-url: https://services-api.ryanair.com/timtbl/3/schedules
+                cache-ttl-minutes: 5
+            default:
+                timeout: 5000
+springdoc:
+    api-docs:
+        path: /v3/api-docs
