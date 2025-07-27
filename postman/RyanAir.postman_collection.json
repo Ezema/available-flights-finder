@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "6d30de39-8c0c-4d1d-9231-1c3b3adddf61",
+		"name": "RyanAir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32496917"
+	},
+	"item": [
+		{
+			"name": "MAD-DUB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/flights-finder/api/interconnections?departure=MAD&arrival=DUB&departureDateTime=2025-08-03T00:00&arrivalDateTime=2025-08-05T23:59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights-finder",
+						"api",
+						"interconnections"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "MAD"
+						},
+						{
+							"key": "arrival",
+							"value": "DUB"
+						},
+						{
+							"key": "departureDateTime",
+							"value": "2025-08-03T00:00"
+						},
+						{
+							"key": "arrivalDateTime",
+							"value": "2025-08-05T23:59"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
